@@ -1,0 +1,17 @@
+name = "html-form-email"
+main = "src/index.ts"
+compatibility_date = "2026-10-09"
+
+[vars]
+# Comma-separated origins that may submit a contact form. Do not use '*'.
+ALLOWED_ORIGINS = "https://example.com"
+# Comma-separated hostnames expected in a successful Turnstile token.
+TURNSTILE_HOSTNAMES = "example.com"
+TURNSTILE_ACTION = "contact"
+
+# Add a Cloudflare Rate Limiting binding before production deployment, then
+# uncomment this block and replace the namespace ID with your own value.
+# [[ratelimits]]
+# name = "CONTACT_RATE_LIMITER"
+# namespace_id = "your-unique-namespace-id"
+# simple = { limit = 5, period = 60 }

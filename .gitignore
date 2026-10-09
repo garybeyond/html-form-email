@@ -1,0 +1,9 @@
+node_modules/
+.dev.vars
+.wrangler/
+coverage/
+# Local keyword/SERP research is working material, never repository content.
+research/
+AGENTS.md
+.impeccable/
+.DS_Store
